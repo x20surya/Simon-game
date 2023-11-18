@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@200&family=Montserrat&family=Poppins:ital,wght@0,300;1,200&family=Roboto+Slab&family=Sono&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Inter:wght@200&family=Montserrat&family=Pixelify+Sans&family=Poppins:ital,wght@0,300;1,200&family=Roboto+Slab&family=Sono&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            align-items: center;
+            background-color: green;
+            font-family: 'Pixelify Sans', sans-serif;
+            font-size: 50px;
+        }
+        .img-grid{
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 300px 300px;
+            place-items: center;
+
+            
+
+        }
+        .img-grid > div{
+            width: 200px;
+            height: 200px;
+            border: solid 5px ;
+            border-radius: 20px;
+            
+        }
+        .div1{
+            background-color: white;
+        }
+        .div2{
+            background-color: blue;
+        }
+        .div3{
+            background-color: red;
+        }
+        .div4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press A Key to Start</h1>
+    
+    <div class="img-grid">
+          
+          <div  class="div1 btn white"></div>
+          <div  class="div2 btn blue"></div>
+          <div  class="div3 btn red"></div>
+          <div  class="div4 btn yellow"></div>
+
+    </div>
+
+    <h2></h2>
+    <h3></h3>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
